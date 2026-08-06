@@ -1,313 +1,97 @@
-.lol {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: blueviolet;
-  text-align: center;
-  border: 2px solid blueviolet;
-  background: linear-gradient(to right, #31136b, #3e1463);
-}
-
-/* CUERPO DE PAGINA */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: white;
+  background-image: url('3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  body {
-    background-color: grey;
-  }
 
-  @media screen and (max-width: 992px) {
-    .jo {
-      flex: 50%;
-      font-size: 13px;
-    }
-  }
-
-
-
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation: none !important;
-      transition: none !important;
-    }
-  }
-
-  .lil {
-    background-color: red;
-    position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-  }
-
-  @keyframes example {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    25% {
-      left: 200px;
-      top: 0px;
-    }
-    50% {
-      left: 200px;
-      top: 200px;
-    }
-    75% {
-      left: 0px;
-      top: 200px;
-    }
-    100% {
-      left: 0px;
-      top: 0px;
-    }
-  }
-}
-
-.lil {
-  border: 2px solid blueviolet;
-  text-align: center;
-  margin-top: 70px;
-  color: white;
-  border-radius: 15px;
-  background: linear-gradient(to right, #7044a1, #642aa7, #5600b3);
-  margin-right: 320px;
-  margin-left: 100px;
-  width: 550px;
-  height: 210px;
-  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.lil:hover {
-  transform: translate(5px, -5px);
-  box-shadow: 10px 10px 5px blueviolet;
-}
-
-.card-contenedor {
-  border: 2px solid blueviolet;
-  text-align: center;
-  margin-top: -210px;
-  color: white;
-  border-radius: 15px;
-  background: linear-gradient(to right, #7044a1, #642aa7, #5600b3);
-  margin-right: 210px;
-  margin-left: 750px;
-  width: 550px;
-  height: 560px;
-  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Envoltorio para centrar la lista manteniedo el texto alineado a la izquierda */
-.list-wrapper {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.list-wrapper ul {
-  text-align: left;
-  display: inline-block;
-}
-
-.card-contenedor:hover {
-  transform: translate(5px, -5px);
-  box-shadow: 10px 10px 5px blueviolet;
-}
-
-.lel {
-  border: 2px solid blueviolet;
-  text-align: left;
-  margin-top: -310px;
-  color: white;
-  border-radius: 15px;
-  background: linear-gradient(to right, #7044a1, #642aa7, #5600b3);
-  margin-right: 210px;
-  margin-left: 100px;
-  width: 550px;
-  height: 580px;
-  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.lel:hover {
-  transform: translate(5px, -5px);
-  box-shadow: 10px 10px 5px blueviolet;
-}
-
-.lal {
-  border: 2px solid blueviolet;
-  text-align: left;
-  margin-top: -200px;
-  color: white;
-  border-radius: 15px;
-  background: linear-gradient(to right, #7044a1, #642aa7, #5600b3);
-  margin-right: 210px;
-  margin-left: 750px;
-  width: 550px;
-  height: 310px;
-  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.lal:hover {
-  transform: translate(5px, -5px);
-  box-shadow: 10px 10px 5px blueviolet;
-}
-
-@keyframes mover {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100px);
-  }
-}
-
-/* Usamos la clase .lol que ya está en tu HTML */
-.lol {
-  animation: mover 1s;
-}
-
-.caja {
-  animation: mover 2s infinite alternate;
-}
-
-/* From Uiverse.io by Spacious74 */
 .button {
+  width: fit-content;
+  display: flex;
+  padding: 1.2em 1rem;
   cursor: pointer;
-  font-size: 1.4rem;
-  border-radius: 16px;
-  border: none;
-  padding: 2px;
-  background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);
-  position: relative;
-}
-.button::after {
-  content: "";
-  position: absolute;
-  width: 65%;
-  height: 60%;
-  border-radius: 120px;
-  top: 0;
-  right: 0;
-  box-shadow: 0 0 20px #ffffff38;
-  z-index: -1;
-}
-
-.blob1 {
-  position: absolute;
-  width: 70px;
-  height: 100%;
-  border-radius: 16px;
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(
-    circle 60px at 0% 100%,
-    #3fe9ff,
-    #0000ff80,
-    transparent
-  );
-  box-shadow: -10px 10px 30px #0051ff2d;
-}
-
-.inner {
-  padding: 14px 25px;
-  border-radius: 14px;
+  gap: 0.4rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
+  background-size: 300%;
   color: #fff;
-  z-index: 3;
-  position: relative;
-  background: radial-gradient(circle 80px at 80% -50%, #777777, #0f1111);
-}
-.inner::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 14px;
-  background: radial-gradient(
-    circle 60px at 0% 100%,
-    #00e1ff1a,
-    #0000ff11,
-    transparent
-  );
-  position: absolute;
+  border: none;
+  background-position: left center;
+  box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+  transition: background .3s ease;
 }
 
-/* TABLA SOBRE REQUERIMIENTOS FUNCIONALES */
-table {
-  border: solid 10px rgb(100, 0, 139);
-  margin: 30px 110px 10px 120px;
-  background-color: rgb(83, 47, 124);
-  box-shadow: 10px 10px 190px rgb(75, 2, 158);
-  border-radius: 10px;
+.button:hover {
+  background-size: 320%;
+  background-position: right center;
 }
 
-td,
-th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  color: #dddddd;
+.button:hover svg {
+  fill: #fff;
 }
 
-.a {
-  text-align: center;
-  color: white;
+.button svg {
+  width: 23px;
+  fill: #f09f33;
+  transition: .3s ease;
 }
 
-/* TIPO DE DISPOSITIVO */
-.dispositivo{
-    position: fixed;
-    top: 8px;
-    right: 8px;
-    background: blueviolet;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 10px;
-    font-weight: bold;
-    z-index: 9999;
+.lol{
+    height: 150px;
+    width: 150px;
+    position:relative;
+    left: -150px;
+    top: 290px;
 }
-
-#tipo::before{
-    content: "Desktop";
+.lil{
+    background-color: rgb(33, 32, 32);
+    height: 190px;
+    width: 100px;
+    border-radius: 20px;
+    margin: -160px 820px 820px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9px 10px 5px 5px; 
+    
 }
-
-/* Mobile */
-@media (max-width:600px){
-
-    #tipo::before{
-        content: "📱 Mobile";
-    }
-
+.lal{
+    width: 55px;
+    height: 55px;
+    background-color: darkred;
+    border-radius: 1000px;
+    margin-bottom: 10px;
+    border: solid 1px grey;
 }
-
-/* Tablet */
-@media (min-width:601px) and (max-width:900px){
-
-    #tipo::before{
-        content: "📟 Tablet";
-    }
-
+.lel{
+    width: 55px;
+    height: 55px;
+    background-color: olive;
+    border-radius: 1000px;
+    margin-bottom: 10px;
+    border: solid 1px grey;
 }
-
-/* Desktop */
-@media (min-width:901px){
-
-    #tipo::before{
-        content: "🖥️ Desktop";
-    }
-
+.lul{
+    width: 55px;
+    height: 55px;
+    background-color: darkgreen;
+    border-radius: 1000px;
+    margin-bottom: 10px;
+    border: solid 1px grey;
 }
-
-/* PIE DE PAGINA */
-footer {
-text-align: center;
-padding: 10px;
-background-color: rgb(20, 20, 20);
-position: relative;
-bottom: 0;
-width: 100%;
+.lal.prendida{
+    background-color: red;
+    box-shadow: 0 0 15px 4px red;
+}
+.lel.prendida{
+    background-color: yellow;
+    box-shadow: 0 0 15px 4px yellow;
+}
+.lul.prendida{
+    background-color: green;
+    box-shadow: 0 0 15px 4px green;
 }
